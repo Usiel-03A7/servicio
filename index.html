@@ -13,29 +13,26 @@
     <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="/css/index.css">
 
+    <link rel="manifest" href="./manifest.json">
+    <!---PWA--->
 
+    <!----METAS DE PWA-->
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./pwa/images/icons/icon-512x512.png">
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png" />
 
- <!--PWA-->
- <link rel="manifest" href="./manifest.json"> 
- <!---PWA--->
-
- <!----METAS DE PWA-->
- <meta name="theme-color" content="#2F3BA2">
- <meta name="MobileOptimized" content="width">
- <meta name="HandheldFriendly" content="true">
- <meta name="apple-mobile-web-app-capable" content="yes">
- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
- <link rel="shortcut icon" type="image/png" href="./pwa/images/icons/icon-512x512.png">
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-72x72.png" />
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-96x96.png" />
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-128x128.png" />
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-144x144.png" />
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-152x152.png" />
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-192x192.png" />
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-384x384.png" />
- <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png" />
-
- <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
 
 
 
@@ -45,10 +42,21 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar">
         <div class="navbar__tittle">
             <h1>7 wonders of the world</h1>
+        </div>
+        <div class="navbar__lista">
+            <ul>
+                <li><a href="">Cristo Redentor</a></li>
+                <li><a href="">ruinas de Machu Picchu</a></li>
+                <li><a href="">muralla china</a></li>
+                <li><a href="">ciudad de Petra</a></li>
+                <li><a href="">Taj Mahal</a></li>
+                <li><a href=""> Coliseo romano</a></li>
+                <li><a href="">Chichen Itzá</a></li>
+            </ul>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-item active">
@@ -86,9 +94,16 @@
     </nav>
     <div class="container">
         <div class="container__info">
-            <p>Las nuevas 7 maravillas del mundo son siete monumentos existentes en la actualidad que se consideran parte de la memoria global. Estos son: la estatua del Cristo Redentor, las ruinas de Machu Picchu, la gran muralla china, la ciudad de Petra, el palacio del Taj Mahal, el Coliseo romano y la ciudad de Chichen Itzá. Se conocen también como las Siete Maravillas del Mundo Moderno.</p>
-            <p> La lista incluye una mención honorífica a las Pirámides de Guiza, en Egipto, única maravilla del mundo antiguo que todavía existe. El número 7 se mantuvo tanto porque rinde homenaje a las siete maravillas de la antigüedad, como porque el 7 simboliza la perfección. Además, algunos estudios sugieren que siete es el número de cosas que el cerebro humano puede recordar.</p>
-            <p>El Día Internacional de las Siete Maravillas del Mundo Moderno se celebra el 7 de julio, fecha en que se dieron a conocer los monumentos ganadores de este reconocimiento en el año 2007.</p>
+            <p>Las nuevas 7 maravillas del mundo son siete monumentos existentes en la actualidad que se consideran
+                parte de la memoria global. Estos son: la estatua del Cristo Redentor, las ruinas de Machu Picchu, la
+                gran muralla china, la ciudad de Petra, el palacio del Taj Mahal, el Coliseo romano y la ciudad de
+                Chichen Itzá. Se conocen también como las Siete Maravillas del Mundo Moderno.</p>
+            <p> La lista incluye una mención honorífica a las Pirámides de Guiza, en Egipto, única maravilla del mundo
+                antiguo que todavía existe. El número 7 se mantuvo tanto porque rinde homenaje a las siete maravillas de
+                la antigüedad, como porque el 7 simboliza la perfección. Además, algunos estudios sugieren que siete es
+                el número de cosas que el cerebro humano puede recordar.</p>
+            <p>El Día Internacional de las Siete Maravillas del Mundo Moderno se celebra el 7 de julio, fecha en que se
+                dieron a conocer los monumentos ganadores de este reconocimiento en el año 2007.</p>
         </div>
     </div>
     <footer>
@@ -97,16 +112,16 @@
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./regist_serviceWorker.js"></script> 
+    <script src="./regist_serviceWorker.js"></script>
     <script>
-      $(function(){
-    //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-        ()=>{
-            $(".cargando").hide(); 
-         } , 50
-     );
-     });
+        $(function () {
+            //Precarga de la pagina se ejecuta solo una vez
+            setTimeout(
+                () => {
+                    $(".cargando").hide();
+                }, 50
+            );
+        });
     </script>
 </body>
 
