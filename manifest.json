@@ -33,7 +33,7 @@
     {
       "src": "./images/img5.webp",
       "sizes": "152x152",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
       "src": "./images/img6.jpg",
