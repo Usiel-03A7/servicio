@@ -12,6 +12,34 @@
         crossorigin="anonymous"></script>
     <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="/css/index.css">
+
+
+
+ <!--PWA-->
+ <link rel="manifest" href="./manifest.json"> 
+ <!---PWA--->
+
+ <!----METAS DE PWA-->
+ <meta name="theme-color" content="#2F3BA2">
+ <meta name="MobileOptimized" content="width">
+ <meta name="HandheldFriendly" content="true">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="shortcut icon" type="image/png" href="./pwa/images/icons/icon-512x512.png">
+ <link rel="apple-touch-icon" href="./images/img1.jpg" />
+ <link rel="apple-touch-icon" href="./images/img2.jpg" />
+ <link rel="apple-touch-icon" href="./images/img3.jpg" />
+ <link rel="apple-touch-icon" href="./images/img4.jpg" />
+ <link rel="apple-touch-icon" href="./images/img5.webp" />
+ <link rel="apple-touch-icon" href="./images/img6.jpg" />
+ <link rel="apple-touch-icon" href="./images/img7.jpg" />
+
+ <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+
+
+
+
+
     <title>7 wonders of the world</title>
 </head>
 
@@ -66,6 +94,19 @@
         <h2>Página beta de práctica</h2>
         <a href="https://github.com/Usiel-03A7">Mi github</a>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./regist_serviceWorker.js"></script> 
+    <script>
+      $(function(){
+    //Precarga de la pagina se ejecuta solo una vez
+    setTimeout(
+        ()=>{
+            $(".cargando").hide(); 
+         } , 50
+     );
+     });
+    </script>
 </body>
 
 </html>
