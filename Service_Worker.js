@@ -1,14 +1,11 @@
-;
+
 //asignar un nombre y versión al cache
 const CACHE_NAME = 'WebDeveloper',
   urlsToCache = [
     './',
     './index.html',
-    './aboutus.html',
-    './knowUs.html',
-    './index.html',
     './css/bootstrap.min.css',
-    './css/index.css',
+    './css/home.css',
 
     './js/bootstrap.bundle.min.js',
     './js/jquery-3.6.0.js',
